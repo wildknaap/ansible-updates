@@ -1,0 +1,2 @@
+[updates]
+<hostname> ansible_port=<port> ansible_host=<ip> ansible_user=<user>
