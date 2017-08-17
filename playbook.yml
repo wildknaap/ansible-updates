@@ -1,0 +1,25 @@
+---
+
+- hosts: all
+
+
+  tasks:
+
+  - name: apt-get update && apt-get dist-upgrade
+    #become: true
+    #become_method: sudo
+    apt:
+      update_cache: yes	
+      upgrade: dist
+
+  - name: apt-get autoclean
+    #become: true
+    #become_method: sudo
+    apt:
+      autoclean: yes
+
+  - name: apt-get autoremove
+    #become: true
+    #become_method: sudo
+    apt:
+      autoremove: yes
